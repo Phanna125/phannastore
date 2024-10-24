@@ -1,0 +1,187 @@
+/* General Body Styling */
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif; /* Fun font */
+  background-color: #ffefdb; /* Soft peach background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  background-color: #ff6b6b; /* Bright red header */
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 5px solid #ff3d3d; /* Darker red border */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em; /* Larger font size */
+  letter-spacing: 2px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.5em; /* Larger font size */
+  transition: transform 0.3s;
+}
+
+header nav a:hover {
+  color: #ffcc00; /* Yellow on hover */
+  transform: scale(1.1); /* Slightly enlarge the links */
+}
+
+/* Product Section Styling */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: #fff; /* White background for products */
+}
+
+.product {
+  background-color: #ffffff;
+  width: 250px;
+  margin: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #ff6b6b; /* Bright red border under images */
+}
+
+.product h3 {
+  font-size: 1.8em; /* Larger product name */
+  margin: 15px;
+  color: #ff6b6b; /* Bright red for product names */
+}
+
+.product p {
+  font-size: 1.4em; /* Larger price font */
+  margin: 15px;
+  color: #ffcc00; /* Bright yellow price */
+  font-weight: bold;
+}
+
+.product button {
+  display: block;
+  width: 80%;
+  margin: 10px auto 15px;
+  padding: 10px;
+  background-color: #ffcc00; /* Bright yellow button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.product button:hover {
+  background-color: #ff6b6b; /* Change to red on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Hover Effects */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Cart Section Styling */
+#cart {
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffe6cc; /* Light orange cart background */
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#cart h2 {
+  font-size: 2.5em; /* Larger cart title */
+  margin-bottom: 20px;
+  color: #ff6b6b; /* Bright red cart title */
+}
+
+#cart-items div {
+  font-size: 1.4em; /* Larger cart item font */
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+#cart-total {
+  font-size: 1.8em; /* Larger total font */
+  font-weight: bold;
+  color: #ff6b6b; /* Bright red for total */
+  margin-top: 15px;
+}
+
+#checkout {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.5em; /* Larger checkout button font */
+  background-color: #ff6b6b; /* Bright red checkout button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+}
+
+#checkout:hover {
+  background-color: #ff3d3d; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Styling */
+footer {
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+footer a {
+  color: #ffcc00; /* Bright yellow links */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ff6b6b; /* Bright red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+}
